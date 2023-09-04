@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>MY SITE</title>
+       <meta name="viewport" content="width=device-width" initial-scale=1.0">
+            <style>
+                body
+                {
+                    margin:0;
+                    height:100%;
+                    width:100%;
+                }
+                       
+                        .box
+                        {
+                                padding:20px;
+                                width:52%;
+                                height:1000px;
+                                margin-left:22%;
+                                margin-top:5%;
+                                font-size:20px;
+                                border-radius: 13px 13px;
+                                box-shadow: 2px 5px 15px grey;
+                                background-color: white;
+                        }
+                        
+                        #but{
+                           padding:10px 20px;
+                           cursor:pointer;
+                           transform: translate(320%,-20%);
+                           color:lavenderblush;
+                           background-color:#1DB9C3;
+                           font-size: 16px;
+                           border: none;
+                           border-radius: 4px 4px;
+                           box-shadow: inset 1px 8px 25px #1DB9C3;
+                        }
+                        input
+                        {
+                            background-color: rgba(128, 128, 128, 0.24);
+                            padding:8px;
+                            border-radius: 5px 5px;
+                        }
+                        textarea
+                        {
+                            background-color: rgba(128, 128, 128, 0.24);
+                            padding:8px;
+                            border-radius: 5px 5px;
+                            border: 2px inset grey;
+                        }
+                        .vl
+                        {
+                          border-left: 2px solid black ;
+                          height:280px;  
+                          transform: translate(48%,-140%);
+                         
+                        }
+                        .inner1
+                        {
+                            margin-left: 12%;
+                            margin-top: 8%;
+                        }
+                       .inner2
+                       {
+                        margin-left:58%;
+                        margin-top: -80%;
+                       }
+                     
+                        .hr1
+                        {
+                            width:80%;
+                            border-bottom:2px solid black;
+                            margin-left:10%;
+                            margin-top:-47%;
+                        }
+                        .hr2
+                        {
+                            width:80%;
+                            border-bottom:2px solid black;
+                            margin-left:10%;
+                            margin-top:45%;
+                        
+                        }
+                        #check1
+                        {
+                            margin-left: 12%;
+                        }
+                        #check2
+                        {
+                            margin-left:10%;
+                        }
+            </style>
+    </head>
+        <body>
+            <form action="Deliverydata.php" method="post">
+            <div class="box">
+            <center><h1>Personal Details</h1></center>
+            <div class="inner1">
+                <table><tr><td>FirstName:</td></tr>
+                       <tr><td><input type="text" id="Fname" name="name1" required/><br/><br/></td></tr>
+                     
+                        <tr><td>E-mail: </tr>
+                        <tr><td><input type="email" id="email" name="email" required/><br/><br/><br/></td></tr>
+
+                        <tr><td>Shopping Address<br/><br/><br/></td></tr>
+                        
+                        <tr><td>Address1:</tr>
+                        <tr><td><textarea type="text" id="Add1" name="Add1" rows="3" cols="20"  required/></textarea><br/><br/></td></tr>
+
+                        <tr><td>State:</td> </tr>
+                            <tr><td><input type="text" id="state" name="state" required/><br/><br/></td></tr>
+
+                        <tr><td>Area:</td> </tr>
+                        <tr><td><input type="text" id="Area" name="Area" required/><br/><br/><br/></td></tr>
+                        <tr><td>Address Type</td></tr></table>
+                    
+                </div>
+                
+                <div class="inner2">
+                    <table><tr><td>LastName:</td></tr>
+                           <tr><td><input type="text" id="Lname" name="name2" required/><br/><br/></td></tr>
+                         
+                            <tr><td>PhoneNumber: </tr>
+                            <tr><td><input type="text" id="phone" name="phone" required/><br/><br/><br/><br/><br/><br/></td></tr>
+                            <tr><td></td></tr>
+                            <tr><td>Address2:</tr>
+                            <tr><td><textarea type="text" id="Add2" name="Add2" rows="3" cols="20"  required/></textarea><br/><br/></td></tr>
+                            <tr><td>City: </tr>
+                            <tr><td><input type="text" id="city" name="city" required/><br/><br/></td></tr>
+                            
+                            <tr><td>PinCode:</td> </tr>
+                            <tr><td><input type="text" id="pin" name="pin" required/><br/><br/><br/></td></tr></table>
+                            
+                            
+                    </div>
+                    <div class="hr1"></div>
+                  
+             <br/><br/>
+             <div class="hr2"></div><br/><br/>
+             <div class="type">
+            <input type="radio" id="check1" name="check" required/>
+            <label>Home(All Day Delivery)</label>
+            <input type="radio" id="check2" name="check" required/>
+            <label>Work(Delivery between 10AM - 5PM)</label></div><br/><br/><br/>
+            <button type="submit" id="but" onclick="WriteName()"/>Continue</button>
+         </div>
+
+            </form>
+            <script type="text/javascript">
+
+                // SignUp Validation
+                      function WriteName()
+                      {
+                          var Stored1= document.getElementById("mail");
+                          var Stored2= document.getElementById("pass");
+  
+                
+               if(isFinite(Stored1.value))
+                  {
+                      alert("Enter the Valid Email!");
+                  }
+                 
+                 else if( Stored2.value=="")
+                  {
+                          alert("Enter the Valid Password!");
+                  }
+                
+              }
+              </script>
+        </body>
+</html>

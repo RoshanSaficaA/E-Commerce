@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>MY SITE</title>
+       <meta name="viewport" content="width=device-width" initial-scale=1.0">
+            <style>
+                body
+                {
+                    margin:0;
+                    height:100%;
+                    width:100%;
+                }
+                       
+                        .box
+                        {
+                                padding:20px;
+                                width:26%;
+                                height:22%;
+                                margin-left:35%;
+                                margin-top:9%;
+                                font-size:20px;
+                                border-radius: 13px 13px;
+                                box-shadow: 2px 5px 15px grey;
+                                background-color: white;
+                        }
+                        
+                        #but{
+                           padding:10px 20px;
+                           cursor:pointer;
+                           transform: translate(210%,-20%);
+                           color:lavenderblush;
+                           background-color:#1DB9C3;
+                           font-size: 16px;
+                           border: none;
+                           border-radius: 4px 4px;
+                           box-shadow: inset 1px 8px 25px #1DB9C3;
+                        }
+                        input
+                        {
+                            background-color: rgba(128, 128, 128, 0.24);
+                            border-radius: 5px 5px;
+                        }
+                        #chk1,#chk2,#chk4
+                        {
+                            padding:8px;
+                        }
+                        #chk3
+                        {
+                            padding:8px;
+                            width:32px;
+                        }
+                     #check1
+                     {
+                        margin-left: -20%;
+                     }
+                     #check2
+                     {
+                        margin-left: -58%;
+                     }
+                     #check3
+                     {
+                        margin-left:-30%;
+                     }
+            </style>
+    </head>
+        <body>
+            <form action="Confirmdata.php" method="post">
+            <div class="box">
+            <center> <h3>Payment Options</h3> <hr/>
+           <table>
+            <input type="radio" id="check1" name="check" value="CARD" required/>
+            <label>Credit/Debit/ATM Card</label><br/><br/>
+           
+            <input type="text" id="chk1" name="card" placeholder="Enter Card Number...." maxlength="16" required/><br/>
+            <input type="date" id="chk2" name="date"  required/>
+            <input type="text" id="chk3" name="cvv" placeholder="CVV" maxlength="3" required/><br/><br/><br/>
+
+            <input type="radio" id="check2" name="check" value="UPI" required/>
+            <label>UPI</label><br/><br/>
+
+            <input type="email" id="chk4" name="upi" ><br/><br/><br/>
+
+            <input type="radio" id="check3" name="check" value="COD" required/>
+            <label>Cash on Delivery</label><br/><br/>
+
+             </table></center><br/><br/>
+             <input type="submit" id="but" value="PAY" onclick="WriteName()"/>
+     
+         </div>
+            
+        </form>
+          
+            <script type="text/javascript">
+            
+            </script>
+        </body>
+</html>

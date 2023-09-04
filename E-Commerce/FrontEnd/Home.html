@@ -1,0 +1,567 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style1.css" >
+        <style>
+            body{
+            width:100%;
+            height:120%;
+            margin:0;
+            
+            }
+
+
+/* Navigation1 */
+            .con1
+            {
+                
+                top:0;
+                width: 100%;
+                height: 15%;
+                border-radius: 4px 4px ;
+                box-shadow:   1px 1px 5px rgba(0, 0, 0, 0.347);
+                background-color:white;
+                position:fixed;
+            }
+           
+            .nav1
+            {
+                list-style-type:none;
+                margin:0;
+                padding:0;
+
+            }
+           
+            #a11,#a12,#a13
+            {
+                text-decoration: none;
+                display:block;
+                width:85px;
+                font-size:22px;
+                color:black;
+                float:right;
+                padding:42px 33px;
+                text-align: center;
+                
+            }
+           
+            #a11:hover,#a12:hover,#a13:hover
+            {
+                transition:0.5s;
+                text-transform:uppercase;
+            }
+
+/* Logo */
+            img
+            {
+                margin-left:50px;
+                padding:2px 2px;
+                height:100px;
+                width:10%;
+              
+            }
+            input
+            {
+            width:40%;
+            padding:10px 10px;
+            transform: translate(12%,-90%);
+            border-radius: 8px 8px;
+            }         
+            
+/* Video */
+           
+            .overlay1
+            { 
+                width:100%;
+                height:40%;
+                object-fit:fill;
+                border-radius: 4px 4px;
+                
+            }
+                
+/* Navigation2 */
+
+            .nav2
+            {
+                list-style-type:none;
+                margin:0;
+                padding:5px 20px;
+                font-size:22px;
+                background-color:rgb(255, 255, 255);    
+                width:12%;
+                height:72%;
+                overflow:auto;
+                text-align: center;
+                box-shadow:  1px 1px 8px  rgba(0, 0, 0, 0.347);
+            }
+
+            .con2 a{      
+                text-decoration:none;
+                color:black;
+                display:block;
+                cursor:pointer;
+            } 
+
+            #li1 a
+            {
+                padding:14px 35px;
+            }
+
+            #li2 a
+            {
+                padding:14px 40px;
+            }
+
+            #li3 a
+            {
+                padding:14px 48px;
+            }
+
+            #li4 a
+            {
+                padding:14px 52px;
+            }
+            .con2 a:hover
+            {
+                background-color:grey;
+                color:ghostwhite;
+            }
+            
+            .but2
+             {
+                padding:6px 6px;
+                transform:translate(100%,-122%);
+                border-radius:4px 4px;
+               
+             }
+    
+/*More*/
+.but1{
+  border:none;
+  border-radius:5px;
+  padding:10px 10px;
+  font-size:18px;
+  cursor:pointer;
+  transform:translate(100%,-122%);
+}
+.but1:hover{
+  background-color:#ddd;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow:auto;
+  margin-top:-50px;
+  background-color:#fff;
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  padding:40px 40px;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown-options a {
+  display: block;
+  color: #000000;
+  padding: 10px;
+  text-decoration: none;
+ 
+}
+
+.dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+ 
+}
+
+#check1:hover,#check2:hover,#check3:hover
+{
+  background-color:transparent;
+}
+      </style>
+    </head>
+    <body> 
+    <br><br><br><br><br><br>
+    <video class="overlay1" autoplay muted loop>
+        <source src="D1.mp4" type="video/mp4">
+       </video>  
+        <div class="con1">
+            
+           <div class="nav1">
+            
+            <div class="dropdown">
+                <button class="but1"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <div class="dropdown-options">
+                  <a href="Cart.html">Cart</a>
+                  <a href="Review.html">Review</a>
+                  <a href="Login.html">Logout</a>
+                </div>
+              </div>
+            <a id="a11" href="Login.html">SignIn</a>
+            <a  id="a12" href="Contact.html">Contact</a>
+            <a  id="a13" href="Home.html">Home</a>    
+            <img src="EC2.png">
+            <input type="text" id="typ" placeholder="Search...."/>
+            <button class="but2" type="submit" onclick="search();"><i class="fa fa-search"></i></button>
+           </div>
+        
+</div>
+<nav class="con2">
+    <ul class="nav2">
+        <p><b>CATEGORIES<hr/></b></p>
+        <li id="li1"><a onclick="click1();">Men's-Wear</a></li> 
+        <li id="li2"><a onclick="click2();">Kids-Wear</a></li>
+        <li id="li3"><a onclick="click3();">Women's</a></li>
+        <li id="li4"><a onclick="click4();">Makeup</a></li>
+        </ul>
+        <div class="box2" id="Men" style="display: block;">
+            <div class="op1"><img class="M1" src="M1.jpg"><p><b>$700-$850</b></p><a id="check1" href="Cart1.html" onclick="op1()"><button class="B1">Add To Cart +</button></a></div>
+            <div class="op2"><img class="M2" src="M2.webp"><p><b>$400-$550</b></p><a id="check2" href="Cart1.html" onclick="op2()"><button class="B2">Add To Cart +</button></a></div>
+            <div class="op3"><img class="M3" src="M3.jpeg"><p><b>$1100-$1999</b></p><a id="check3" href="Cart1.html" onclick="op3()"><button class="B3" >Add To Cart +</button></a></div>
+            <div class="op4"><img class="M4" src="M4.jpeg"><p><b>$900-$999</b></p><a id="check1" href="Cart1.html" onclick="op4()"><button class="B4" >Add To Cart +</button></a></div>
+            <div class="op5"><img class="M5" src="M5.jpeg"><p><b>$1129-$1300</b></p><a id="check1" href="Cart1.html" onclick="op5()"><button class="B5"  >Add To Cart +</button></a></div>
+            <div class="op6"><img class="M6" src="M6.webp"><p><b>$800-$850</b></p><a id="check1" href="Cart1.html" onclick="op6()"><button class="B6"  >Add To Cart +</button></a></div>
+            <div class="op7"><img class="M7" src="M7.jpeg"><p><b>$1500-$1150</b></p><a id="check1" href="Cart1.html" onclick="op7()"><button class="B7"  >Add To Cart +</button></a></div>
+            <div class="op8"><img class="M8" src="M8.jpeg"><p><b>$445-$500</b></p><a id="check1" href="Cart1.html" onclick="op8()"><button class="B8"  >Add To Cart +</button></a></div>
+        </div>
+        <div class="box2" id="Kids" style="display: none;">
+          <div class="op1"><img class="M1" src="K1.jpeg"><p><b>$700-$850</b></p><a id="check1" href="Cart1.html" onclick="op9()"><button class="B1">Add To Cart +</button></a></div>
+          <div class="op2"><img class="M2" src="K2.jpeg"><p><b>$400-$550</b></p><a id="check1" href="Cart1.html" onclick="op10()"><button class="B2">Add To Cart +</button></a></div>
+          <div class="op3"><img class="M3" src="k3.jpeg"><p><b>$1100-$1999</b></p><a id="check1" href="Cart1.html" onclick="op11()"><button class="B3">Add To Cart +</button></a></div>
+          <div class="op4"><img class="M4" src="k4.jpeg"><p><b>$900-$999</b></p><a id="check1" href="Cart1.html" onclick="op12()"><button class="B4">Add To Cart +</button></a></div>
+          <div class="op5"><img class="M5" src="K5.jpeg"><p><b>$1129-$1300</b></p><a id="check1" href="Cart1.html" onclick="op13()"><button class="B5">Add To Cart +</button></a></div>
+          <div class="op6"><img class="M6" src="K6.jpeg"><p><b>$800-$850</b></p><a id="check1" href="Cart1.html" onclick="op14()"><button class="B6">Add To Cart +</button></a></div>
+          <div class="op7"><img class="M7" src="K7.jpeg"><p><b>$1500-$1150</b></p><a id="check1" href="Cart1.html" onclick="op15()"><button class="B7">Add To Cart +</button></a></div>
+          <div class="op8"><img class="M8" src="K8.jpeg"><p><b>$445-$500</b></p><a id="check1" href="Cart1.html" onclick="op16()"><button class="B8">Add To Cart +</button></a></div>
+      </div>
+      <div class="box2" id="Women" style="display: none;">
+          <div class="op1"><img class="M1" src="W1.jpeg"><p><b>$700-$850</b></p><a id="check1" href="Cart1.html" onclick="op17()"><button class="B1">Add To Cart +</button></a></div>
+          <div class="op2"><img class="M2" src="W2.jpeg"><p><b>$400-$550</b></p><a id="check1" href="Cart1.html" onclick="op18()"><button class="B2">Add To Cart +</button></a></div>
+          <div class="op3"><img class="M3" src="W3.jpeg"><p><b>$1100-$1999</b></p><a id="check1" href="Cart1.html" onclick="op19()"><button class="B3">Add To Cart +</button></a></div>
+          <div class="op4"><img class="M4" src="W4.jpeg"><p><b>$900-$999</b></p><a id="check1" href="Cart1.html" onclick="op20()"><button class="B4">Add To Cart +</button></a></div>
+          <div class="op5"><img class="M5" src="W5.jpeg"><p><b>$1129-$1300</b></p><a id="check1" href="Cart1.html" onclick="op21()"><button class="B5">Add To Cart +</button></a></div>
+          <div class="op6"><img class="M6" src="W6.webp"><p><b>$800-$850</b></p><a id="check1" href="Cart1.html" onclick="op22()"><button class="B6">Add To Cart +</button></a></div>
+          <div class="op7"><img class="M7" src="W7.jpeg"><p><b>$1500-$1150</b></p><a id="check1" href="Cart1.html" onclick="op23()"><button class="B7">Add To Cart +</button></a></div>
+          <div class="op8"><img class="M8" src="W8.jpeg"><p><b>$445-$500</b></p><a id="check1" href="Cart1.html" onclick="op24()"><button class="B8">Add To Cart +</button></a></div>
+      </div>
+      <div class="box2" id="Makeup" style="display: none;">
+          <div class="op1"><img class="M1" src="MA1.jpeg"><p><b>$700-$850</b></p><a id="check1" href="Cart1.html" onclick="op25()"><button class="B1">Add To Cart +</button></a></div>
+          <div class="op2"><img class="M2" src="MA2.jpeg"><p><b>$400-$550</b></p><a id="check1" href="Cart1.html" onclick="op26()"><button class="B2">Add To Cart +</button></a></div>
+          <div class="op3"><img class="M3" src="MA3.jpeg"><p><b>$1100-$1999</b></p><a id="check1" href="Cart1.html" onclick="op27()"><button class="B3">Add To Cart +</button></a></div>
+          <div class="op4"><img class="M4" src="MA4.jpeg"><p><b>$900-$999</b></p><a id="check1" href="Cart1.html" onclick="op28()"><button class="B4">Add To Cart +</button></a></div>
+          <div class="op5"><img class="M5" src="MA5.jpeg"><p><b>$1129-$1300</b></p><a id="check1" href="Cart1.html" onclick="op29()"><button class="B5">Add To Cart +</button></a></div>
+          <div class="op6"><img class="M6" src="MA6.jpeg"><p><b>$800-$850</b></p><a id="check1" href="Cart1.html" onclick="op30()"><button class="B6">Add To Cart +</button></a></div>
+          <div class="op7"><img class="M7" src="MA7.jpeg"><p><b>$1500-$1150</b></p><a id="check1" href="Cart1.html" onclick="op31()"><button class="B7">Add To Cart +</button></a></div>
+          <div class="op8"><img class="M8" src="MA8.jpeg"><p><b>$445-$500</b></p><a id="check1" href="Cart1.html" onclick="op32()"><button class="B8">Add To Cart +</button></a></div>
+      </div>
+       </nav><br/><br/>
+       
+<script>
+ 
+  function op1()
+    {
+        
+   sessionStorage.setItem("lastname", "M1");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op2()
+ {
+     
+sessionStorage.setItem("lastname", "M2");
+location.href = elem.href + "?name=" + sessionStorage.getItem("lastname");
+ }
+
+ function op3()
+ {
+     
+sessionStorage.setItem("lastname", "M3");
+location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+ }
+  
+ function op4()
+    {
+        
+   sessionStorage.setItem("lastname", "M4");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op5()
+    {
+        
+   sessionStorage.setItem("lastname", "M5");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op6()
+    {
+        
+   sessionStorage.setItem("lastname", "M6");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op7()
+    {
+        
+   sessionStorage.setItem("lastname", "M7");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op8()
+    {
+        
+   sessionStorage.setItem("lastname", "M8");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op9()
+    {
+        
+   sessionStorage.setItem("lastname", "K9");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+    function op10()
+    {
+        
+   sessionStorage.setItem("lastname", "K10");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+    function op11()
+    {
+        
+   sessionStorage.setItem("lastname", "K11");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+    function op12()
+    {
+        
+   sessionStorage.setItem("lastname", "K12");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op13()
+    {
+        
+   sessionStorage.setItem("lastname", "K13");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+    function op14()
+    {
+        
+   sessionStorage.setItem("lastname", "K14");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+    function op15()
+    {
+        
+   sessionStorage.setItem("lastname", "K15");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op16()
+    {
+        
+   sessionStorage.setItem("lastname", "K16");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op17()
+    {
+        
+   sessionStorage.setItem("lastname", "W17");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op18()
+    {
+        
+   sessionStorage.setItem("lastname", "W18");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op19()
+    {
+        
+   sessionStorage.setItem("lastname", "W19");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op20()
+    {
+        
+   sessionStorage.setItem("lastname", "W20");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op21()
+    {
+        
+   sessionStorage.setItem("lastname", "W21");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op22()
+    {
+        
+   sessionStorage.setItem("lastname", "W22");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op23()
+    {
+        
+   sessionStorage.setItem("lastname", "W23");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op24()
+    {
+        
+   sessionStorage.setItem("lastname", "W24");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op25()
+    {
+        
+   sessionStorage.setItem("lastname", "MA25");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op26()
+    {
+        
+   sessionStorage.setItem("lastname", "MA26");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op27()
+    {
+        
+   sessionStorage.setItem("lastname", "MA27");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op28()
+    {
+        
+   sessionStorage.setItem("lastname", "MA28");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op29()
+    {
+        
+   sessionStorage.setItem("lastname", "MA29");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op30()
+    {
+        
+   sessionStorage.setItem("lastname", "MA30");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op31()
+    {
+        
+   sessionStorage.setItem("lastname", "MA31");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+
+    function op32()
+    {
+        
+   sessionStorage.setItem("lastname", "MA32");
+   location.href = elem.href + "?lastname=" + sessionStorage.getItem("lastname");
+    }
+    function click1()
+    {
+        if(document.getElementById("Men").style.display!="block")
+        {
+      document.getElementById("Men").style.display="block";
+      document.getElementById("Women").style.display="none";
+      document.getElementById("Makeup").style.display="none";
+      document.getElementById("Kids").style.display="none";
+        }
+    }
+    function click2()
+    {
+        if(document.getElementById("Kids").style.display=="none")
+        {
+      document.getElementById("Kids").style.display="block";
+      document.getElementById("Men").style.display="none";
+      document.getElementById("Women").style.display="none";
+      document.getElementById("Makeup").style.display="none";
+        }
+    }
+    function click3()
+    {
+        if(document.getElementById("Women").style.display=="none")
+        {
+      document.getElementById("Women").style.display="block";
+      document.getElementById("Men").style.display="none";
+      document.getElementById("Makeup").style.display="none";
+      document.getElementById("Kids").style.display="none";
+        }
+    }
+    function click4()
+    {
+        if(document.getElementById("Makeup").style.display=="none")
+        {
+      document.getElementById("Makeup").style.display="block";
+      document.getElementById("Men").style.display="none";
+      document.getElementById("Kids").style.display="none";
+      document.getElementById("Women").style.display="none";
+        }
+    }
+   
+function search()
+   {
+    if(document.getElementById("typ").value=="makeup" || document.getElementById("typ").value=="cosmetics")
+    {
+      document.getElementById("Women").style.display="none";
+      document.getElementById("Kids").style.display="none";
+      document.getElementById("Men").style.display="none";
+      document.getElementById("Makeup").style.display="block";
+    }
+    else if(document.getElementById("typ").value=="womens" || document.getElementById("typ").value=="girls")
+    {
+      document.getElementById("Women").style.display="block";
+      document.getElementById("Kids").style.display="none";
+      document.getElementById("Men").style.display="none";
+      document.getElementById("Makeup").style.display="none";
+    }
+    else if(document.getElementById("typ").value=="kids" || document.getElementById("typ").value=="childerns")
+    {
+        document.getElementById("Women").style.display="none";
+      document.getElementById("Kids").style.display="block";
+      document.getElementById("Men").style.display="none";
+      document.getElementById("Makeup").style.display="none";
+    }
+    else if(document.getElementById("typ").value=="shirt" || document.getElementById("typ").value=="mens")
+    {
+      document.getElementById("Women").style.display="none";
+      document.getElementById("Kids").style.display="none";
+      document.getElementById("Men").style.display="block";
+      document.getElementById("Makeup").style.display="none";
+    }
+    else
+    {
+      alert("No Results Found!")
+    }
+}
+</script>
+    </body>
+</html>

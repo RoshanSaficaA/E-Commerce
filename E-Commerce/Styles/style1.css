@@ -1,0 +1,289 @@
+.box2
+{
+    width:82%;
+    height:68%;
+    background-color:white;
+    margin-left:16%;
+    margin-top:-42%;
+    border-radius:4px 4px 4px;
+    box-shadow: 1px 1px 3px 4px grey;
+    padding-top: 13px;
+}
+
+.op1
+{
+    width:22%;
+    height:48%;
+    border-radius: 10px 10px 10px;
+    background-color:#FAF7F0;
+    margin-left: 2%;
+    box-shadow: 1px 1px 2px 3px grey;
+    font-size: 20px;
+}
+.M1
+{
+   width:50%;
+   height:55%;
+   margin-left:23%;
+   box-shadow: 1px 1px 3px 4px grey;
+   border-radius: 4px 4px;
+}
+.op1 p
+{
+    margin-left:30%;
+}
+.B1
+{
+  margin-left:28%;
+  padding:12px;
+  cursor:pointer;
+  border-radius: 18px 18px;
+  box-shadow:inset 2px 5px 15px #1DB9C3;
+  background-color: #1DB9C3;
+  border:none;
+}
+
+
+.op2
+{
+    width:22%;
+    height:48%;
+    border-radius: 10px 10px 10px;
+    background-color:#FAF7F0;
+    margin-left: 2%;
+    box-shadow: 1px 1px 2px 3px grey;
+    font-size: 20px;
+    margin-top: 1%;
+}
+.M2
+{
+   width:50%;
+   height:55%;
+   margin-left:23%;
+   box-shadow: 1px 1px 3px 4px grey;
+   border-radius: 4px 4px;
+}
+.op2 p
+{
+    margin-left:30%;
+}
+.B2
+{
+  margin-left:28%;
+  padding:12px;
+  cursor:pointer;
+  border-radius: 18px 18px;
+  box-shadow:inset 2px 5px 15px #1DB9C3;
+  background-color: #1DB9C3;
+  border:none;
+}
+
+.op3
+{
+    width:22%;
+    height:48%;
+    border-radius: 10px 10px 10px;
+    background-color:#FAF7F0;
+    margin-left: 26.3%;
+    box-shadow: 1px 1px 2px 3px grey;
+    font-size: 20px;
+    margin-top: -47.5%;
+}
+.M3
+{
+   width:50%;
+   height:55%;
+   margin-left:23%;
+   box-shadow: 1px 1px 3px 4px grey;
+   border-radius: 4px 4px;
+}
+
+.op3 p
+{
+    margin-left:30%;
+}
+.B3
+{
+  margin-left:28%;
+  padding:12px;
+  cursor:pointer;
+  border-radius: 18px 18px;
+  box-shadow:inset 2px 5px 15px #1DB9C3;
+  background-color: #1DB9C3;
+  border:none;
+}
+
+
+.op4
+{
+    width:22%;
+    height:48%;
+    border-radius: 10px 10px 10px;
+    background-color:#FAF7F0;
+    margin-left: 26.3%;
+    box-shadow: 1px 1px 2px 3px grey;
+    font-size: 20px;
+    margin-top: 1%;
+}
+.M4
+{
+   width:50%;
+   height:55%;
+   margin-left:23%;
+   box-shadow: 1px 1px 3px 4px grey;
+   border-radius: 4px 4px;
+}
+.op4 p
+{
+    margin-left:30%;
+}
+.B4
+{
+  margin-left:28%;
+  padding:12px;
+  cursor:pointer;
+  border-radius: 18px 18px;
+  box-shadow:inset 2px 5px 15px #1DB9C3;
+  background-color: #1DB9C3;
+  border:none;
+}
+
+
+.op5
+{
+    width:22%;
+    height:48%;
+    border-radius: 10px 10px 10px;
+    background-color:#FAF7F0;
+    margin-left: 51.3%;
+    box-shadow: 1px 1px 2px 3px grey;
+    font-size: 20px;
+    margin-top: -47.5%;
+}
+.M5
+{
+   width:50%;
+   height:55%;
+   margin-left:23%;
+   box-shadow: 1px 1px 3px 4px grey;
+   border-radius: 4px 4px;
+}
+.op5 p
+{
+    margin-left:30%;
+}
+.B5
+{
+  margin-left:28%;
+  padding:12px;
+  cursor:pointer;
+  border-radius: 18px 18px;
+  box-shadow:inset 2px 5px 15px #1DB9C3;
+  background-color: #1DB9C3;
+  border:none;
+}
+
+
+.op6
+{
+    width:22%;
+    height:48%;
+    border-radius: 10px 10px 10px;
+    background-color:#FAF7F0;
+    margin-left: 51.3%;
+    box-shadow: 1px 1px 2px 3px grey;
+    font-size: 20px;
+    margin-top: 1%;
+}
+.M6
+{
+   width:50%;
+   height:55%;
+   margin-left:23%;
+   box-shadow: 1px 1px 3px 4px grey;
+   border-radius: 4px 4px;
+}
+.op6 p
+{
+    margin-left:30%;
+}
+.B6
+{
+  margin-left:28%;
+  padding:12px;
+  cursor:pointer;
+  border-radius: 18px 18px;
+  box-shadow:inset 2px 5px 15px #1DB9C3;
+  background-color: #1DB9C3;
+  border:none;
+}
+
+
+.op7
+{
+    width:22%;
+    height:48%;
+    border-radius: 10px 10px 10px;
+    background-color:#FAF7F0;
+    margin-left: 76%;
+    box-shadow: 1px 1px 2px 3px grey;
+    font-size: 20px;
+    margin-top: -47.5%;
+}
+.M7
+{
+   width:50%;
+   height:55%;
+   margin-left:23%;
+   box-shadow: 1px 1px 3px 4px grey;
+   border-radius: 4px 4px;
+}
+.op7 p
+{
+    margin-left:30%;
+}
+.B7
+{
+  margin-left:28%;
+  padding:12px;
+  cursor:pointer;
+  border-radius: 18px 18px;
+  box-shadow:inset 2px 5px 15px #1DB9C3;
+  background-color: #1DB9C3;
+  border:none;
+}
+
+
+.op8
+{
+    width:22%;
+    height:48%;
+    border-radius: 10px 10px 10px;
+    background-color:#FAF7F0;
+    margin-left: 76%;
+    box-shadow: 1px 1px 2px 3px grey;
+    font-size: 20px;
+    margin-top: 1%;
+}
+.M8
+{
+   width:50%;
+   height:55%;
+   margin-left:23%;
+   box-shadow: 1px 1px 3px 4px grey;
+   border-radius: 4px 4px;
+}
+.op8 p
+{
+    margin-left:30%;
+}
+.B8
+{
+  margin-left:28%;
+  padding:12px;
+  cursor:pointer;
+  border-radius: 18px 18px;
+  box-shadow:inset 2px 5px 15px #1DB9C3;
+  background-color: #1DB9C3;
+  border:none;
+}
